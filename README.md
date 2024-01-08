@@ -1,4 +1,4 @@
-# Thala App
+# Thala For A Reason
 
 ## Table of Contents
 
