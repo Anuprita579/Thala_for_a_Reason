@@ -3,6 +3,7 @@ import Filter7Icon from '@mui/icons-material/Filter7';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function Thala() {
   const [input, setInput] = useState("");
@@ -16,7 +17,7 @@ function Thala() {
     const num = String(input);
 
     if (typeof input === 'string' && input.length === 7) {
-      setResult("THALA FOR A REASON");
+      setResult("Restart = THALA FOR REASON");
       return;
     }
 
@@ -25,7 +26,7 @@ function Thala() {
       setResult(`THALA FOR A REASON: ${operations}`);
     }
     else {
-      setResult("No combination found to get 7");
+      setResult("Restart = THALA FOR REASON");
     }
   };
 
@@ -78,13 +79,14 @@ function Thala() {
             <Filter7Icon className='m-4'/>
             <br />
             <input type="text" value={input} onChange={handleChange} className='border-2 border-black outline-none p-2'/> 
-            <button className='bg-yellow-400 p-2 shadow-xl ml-1' onClick={calculateResult}>Submit</button>
+            <button className='bg-blue-900 text-white p-2 shadow-xl ml-1' onClick={calculateResult}>Submit</button>
             <p className='text-black'> {result}</p>
             <p className='text-slate-600'> #thalaforareason</p>
             <h3 className='text-blue-900 font-bold text-xl'>SHARE </h3>
-            <WhatsAppIcon> </WhatsAppIcon>
-            <TwitterIcon></TwitterIcon>
-            <InstagramIcon></InstagramIcon>
+            <WhatsAppIcon className='text-white bg-blue-900 rounded-md p-1 m-1' fontSize='large'> </WhatsAppIcon>
+            <TwitterIcon className='text-white bg-blue-900 rounded-md p-1 m-1' fontSize='large'></TwitterIcon>
+            <InstagramIcon className='text-white bg-blue-900 rounded-md p-1 m-1' fontSize='large'></InstagramIcon>
+            <LinkedInIcon className='text-white bg-blue-900 rounded-md p-1 m-1' fontSize='large'></LinkedInIcon>
 
         </div> 
     </>
