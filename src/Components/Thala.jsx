@@ -17,7 +17,7 @@ function Thala() {
     const num = String(input);
 
     if (typeof input === 'string' && input.length === 7) {
-      setResult("THALA FOR REASON");
+      setResult("THALA FOR REASON: 7 letters");
       return;
     }
 
